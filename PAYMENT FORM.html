@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+   
+</head>
+<link rel="stylesheet" href="paymet.css">
+<body>
+    <!--To make form the most important element to use isthe form tag.INPUT IS THE MOST IMPORTANT ELEMENT IN THE FORM TAG. TYPE IS THE element to which we can take different input's from the user. name attribute to add nam(firts name and last name). value attribut(check box).Password is sam eas the text only the characys are hidden.Radio, User chooses the options from the given box.Checkbox.Multiple options can be selected inside the checkbox.File(User can ad files from the webpage to the from his server).Buttons, Submit,Reset,Image.
+    Text area (can take data of multiple colum's and row's).Select box (to select cities).-->
+    <form action=""><!--action used to give the server location-->
+</body>
+<div class="container"> 
+    <form action="">  
+        <h1 class="main_heading" >Payment Form</h1>
+        <h2>Contact Information</h2>
+        <h3>* INDCATES REQUIRE INFORMATION </h3>
+        <p>Name:* <input type="text" name="name" placeholder="PARTIK SALVE"required></p>
+        <fieldset> <!--used to gather all the information into a single box-->
+            <legend>GENDER * </legend><!--to give the name to the fieldset on the top-->
+           <p>
+                Male * <input type="radio" name="gender" id="Male" required> <!--name attribue must be used to give the same thing to the server so use it differently-->
+                Female * <input type="radio" name="gender" id="Female" required>
+                Other *<input type="radio" name="gender" id="Other" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="addresss" cols="100" rows="9" placeholder="Near,Hotel Taj"></textarea></p><!--text area is used to add no of row's and column's--> 
+        <p>Email:* <input type="email" name="email" id="email" placeholder="pratiksalve@gmail.com"></p>
+        <p>Pincode: <input type="number" name="pincode" id="pincode" placeholder="422401" required></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Accepted Cards:</p>
+        <img src="images (1).jpeg" alt="images" width="20%" >
+        <p>Card Type:*
+            <select name="card_type" id="card_type"> 
+    
+                <option value="">---Select a Card Type---</option> <!--user visible line first visit-->
+                <option value="visa">visa</option> <!--select among the following type. Using the option tag.-->
+                <option value="matercard">mastercard</option>
+                <option value="rupay">rupay</option>
+            </select>
+        </p>
+        <p>
+            Card Number <input type="number" name="Card Number" id="Card Number" placeholder="123 456 789">
+        </p>
+        <p>
+            Expiration <input type="date" name="expiration" id="expiration"> <!--input date is used to select the date among the given-->
+        </p>
+        <p>CVV 
+            <input type="password" name="CVV" id="CVV" placeholder="322">
+        </p>
+        <input type="submit" value="Pay Now">
+    </form>
+</div>  
+</body>
+</html>
